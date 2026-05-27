@@ -692,6 +692,7 @@ const WarehouseCard: React.FC<WarehouseCardProps> = ({
   qrPrefix,
   design,
 }) => {
+  const qrValue = `${qrPrefix}${id}`;
   const cardStyle = {
     width: toCssSize(design.width, design.unit),
     height: toCssSize(design.height, design.unit),
@@ -701,7 +702,7 @@ const WarehouseCard: React.FC<WarehouseCardProps> = ({
 
   return (
     <article
-      className={`bg-white flex flex-col box-border print:break-after-page print:page-break-after-always shadow-md print:shadow-none ${design.showBorder ? "border border-black" : ""}`}
+      className={`relative bg-white flex flex-col box-border print:break-after-page print:page-break-after-always shadow-md print:shadow-none ${design.showBorder ? "border border-black" : ""}`}
       style={cardStyle}
     >
       <header className="text-center shrink-0">
@@ -724,7 +725,7 @@ const WarehouseCard: React.FC<WarehouseCardProps> = ({
           className={`absolute top-0 ${design.qrPosition === "right" ? "right-0" : "left-0"}`}
         >
           <QRCodeCanvas
-            value={`${qrPrefix}${id}`}
+            value={qrValue}
             size={design.qrSize}
             level="M"
             marginSize={0}
@@ -749,6 +750,17 @@ const WarehouseCard: React.FC<WarehouseCardProps> = ({
             lineHeight={design.fieldLineHeight}
           />
         ))}
+      </div>
+      <div
+        className="absolute align-text-top text-gray-800 whitespace-pre-wrap break-all"
+        style={{
+          right: `${design.paddingMm}mm`,
+          bottom: "1mm",
+          fontSize: scaleFont(12, design.fontScale),
+          lineHeight: 1.1,
+        }}
+      >
+        {qrValue}
       </div>
     </article>
   );
