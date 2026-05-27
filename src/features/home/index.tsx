@@ -7,10 +7,6 @@ const LIST_PREFIX = [
     description: "Cây vải",
   },
   {
-    prefix: "carton",
-    description: "Thùng carton kho phụ liệu",
-  },
-  {
     prefix: "attachment",
     description: "Phụ liệu trong thùng",
   },
