@@ -6,10 +6,12 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   preview: {
     host: true,
+    port: 5555,
     allowedHosts: ["qrgen.tre360.vn"],
   },
   server: {
     host: true,
+    port: 5555,
     allowedHosts: ["qrgen.tre360.vn"],
   },
   plugins: [
