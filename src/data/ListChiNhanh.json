@@ -1,0 +1,123 @@
+[
+  {
+    "MaChiNhanh": "02",
+    "TenChiNhanh": "VĐ",
+    "TenDayDu": "Chi nhánh may Việt Đức"
+  },
+  {
+    "MaChiNhanh": "03",
+    "TenChiNhanh": "VT",
+    "TenDayDu": "Chi nhánh may Việt Thái"
+  },
+  {
+    "MaChiNhanh": "04",
+    "TenChiNhanh": "SC1",
+    "TenDayDu": "Chi nhánh may Sông Công 1"
+  },
+  {
+    "MaChiNhanh": "05",
+    "TenChiNhanh": "SC2",
+    "TenDayDu": "Chi nhánh may Sông Công 2"
+  },
+  {
+    "MaChiNhanh": "06",
+    "TenChiNhanh": "PB1",
+    "TenDayDu": "Chi nhánh may Phú Bình 1"
+  },
+  {
+    "MaChiNhanh": "07",
+    "TenChiNhanh": "TOT",
+    "TenDayDu": "Chi nhánh công nghệ tự động hóa TNG"
+  },
+  {
+    "MaChiNhanh": "08",
+    "TenChiNhanh": "Bao Bì",
+    "TenDayDu": "Chi nhánh sản xuất bao bì"
+  },
+  {
+    "MaChiNhanh": "11",
+    "TenChiNhanh": "SC4",
+    "TenDayDu": "Chi nhánh may Sông Công 4"
+  },
+  {
+    "MaChiNhanh": "12",
+    "TenChiNhanh": "SC3",
+    "TenDayDu": "Chi nhánh may Sông Công 3"
+  },
+  {
+    "MaChiNhanh": "13",
+    "TenChiNhanh": "TRE",
+    "TenDayDu": "Chi nhánh Giải pháp công nghệ TRE"
+  },
+  {
+    "MaChiNhanh": "14",
+    "TenChiNhanh": "PB2",
+    "TenDayDu": "Chi nhánh may Phú Bình 2"
+  },
+  {
+    "MaChiNhanh": "15",
+    "TenChiNhanh": "TNG ECO",
+    "TenDayDu": "Chi nhánh TNG ECO"
+  },
+  {
+    "MaChiNhanh": "17",
+    "TenChiNhanh": "VPCT",
+    "TenDayDu": "Văn phòng Công ty"
+  },
+  {
+    "MaChiNhanh": "18",
+    "TenChiNhanh": "Bông",
+    "TenDayDu": "Chi nhánh sản xuất bông"
+  },
+  {
+    "MaChiNhanh": "19",
+    "TenChiNhanh": "TNGF",
+    "TenDayDu": "Chi nhánh Thời Trang TNG"
+  },
+  {
+    "MaChiNhanh": "21",
+    "TenChiNhanh": "PB3",
+    "TenDayDu": "Chi nhánh may Phú Bình 3"
+  },
+  {
+    "MaChiNhanh": "29",
+    "TenChiNhanh": "ĐT",
+    "TenDayDu": "Chi nhánh may Đại Từ"
+  },
+  {
+    "MaChiNhanh": "36",
+    "TenChiNhanh": "ĐH",
+    "TenDayDu": "Chi nhánh may Đồng Hỷ"
+  },
+  {
+    "MaChiNhanh": "38",
+    "TenChiNhanh": "VN",
+    "TenDayDu": "Chi nhánh may Võ Nhai"
+  },
+  {
+    "MaChiNhanh": "BD",
+    "TenChiNhanh": "BDS",
+    "TenDayDu": "Chi Nhánh BDS (Cụm Công Nghiệp)"
+  },
+  {
+    "MaChiNhanh": "DC",
+    "TenChiNhanh": "DC",
+    "TenDayDu": "Chi nhánh Development Center"
+  },
+  {
+    "MaChiNhanh": "DG",
+    "TenChiNhanh": "CSR",
+    "TenDayDu": "Phòng đánh giá khách hàng"
+  },
+  { "MaChiNhanh": "LB", "TenChiNhanh": "LAB", "TenDayDu": "Chi nhánh LAB" },
+  {
+    "MaChiNhanh": "QT",
+    "TenChiNhanh": "HĐQT",
+    "TenDayDu": "Văn phòng quản trị"
+  },
+  {
+    "MaChiNhanh": "XK",
+    "TenChiNhanh": "XNK",
+    "TenDayDu": "Phòng Xuất nhập khẩu"
+  }
+]
