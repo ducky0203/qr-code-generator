@@ -775,7 +775,7 @@ const FieldRow: React.FC<{
     className="flex items-baseline gap-1"
     style={{ fontSize: scaleFont(14, fontScale), minHeight: lineHeight }}
   >
-    <span className="shrink-0 whitespace-nowrap font-bold">{label}</span>
+    <p className="shrink-0 font-bold whitespace-pre">{label}</p>
     <span className="flex-1 border-b border-dotted border-black self-baseline" />
   </div>
 );
