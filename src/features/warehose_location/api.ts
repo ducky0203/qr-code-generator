@@ -1,6 +1,6 @@
 /** Lớp gọi API cấu hình kho cho màn hình in thẻ kho. */
 
-const API_BASE = "http://14.225.7.203:5070/api";
+const API_BASE = "https://api-qr.tre360.vn/api";
 
 /** loaiKho: 1 = Nguyên liệu (NL), 2 = Phụ liệu (PL). */
 export type LoaiKho = 1 | 2;
