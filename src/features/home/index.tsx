@@ -61,6 +61,12 @@ const Home: React.FC = () => {
             >
               Thẻ kho NPL
             </button>
+            <button
+              onClick={() => navigate("/warehouse-location")}
+              className="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg shadow-indigo-200 transition-all active:scale-95 m-2"
+            >
+              In QR vị trí kho
+            </button>
             {LIST_PREFIX.map((item) => {
               return (
                 <button
