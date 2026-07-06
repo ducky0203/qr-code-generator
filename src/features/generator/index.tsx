@@ -7,18 +7,25 @@ const TOTAL_CODES = 600;
 const CODES_PER_ROW = 3;
 const LABEL_WIDTH = "105mm";
 const LABEL_HEIGHT = "22mm";
-const QR_SIZE = 55;
+const QR_SIZE = 68;
 const SCREEN_SCALE = 1.33;
+
+const generateCode = (): string => uuidv4().replace(/-/g, "");
+
+const generateUniqueCodes = (count: number): string[] => {
+  const codes = new Set<string>();
+  while (codes.size < count) {
+    codes.add(generateCode());
+  }
+  return Array.from(codes);
+};
 
 const QRGenerator: React.FC = () => {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const prefix = searchParams.get("prefix") || null;
 
-  const qrData = useMemo(
-    () => Array.from({ length: TOTAL_CODES }, () => uuidv4()),
-    [],
-  );
+  const qrData = useMemo(() => generateUniqueCodes(TOTAL_CODES), []);
 
   const rows = useMemo(() => {
     const grouped: string[][] = [];
@@ -57,7 +64,11 @@ const QRGenerator: React.FC = () => {
       <main className="flex flex-col items-center p-8 print:p-0">
         <div
           className="print:block origin-top qr-screen-scale"
-          style={{ ["--screen-scale" as string]: SCREEN_SCALE } as React.CSSProperties}
+          style={
+            {
+              ["--screen-scale" as string]: SCREEN_SCALE,
+            } as React.CSSProperties
+          }
         >
           {rows.map((row, idx) => (
             <div
