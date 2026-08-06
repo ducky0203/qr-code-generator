@@ -1,5 +1,4 @@
 import React, { useMemo } from "react";
-import { v4 as uuidv4 } from "uuid";
 import { QRCodeCanvas } from "qrcode.react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 
@@ -10,14 +9,9 @@ const LABEL_HEIGHT = "22mm";
 const QR_SIZE = 68;
 const SCREEN_SCALE = 1.33;
 
-const generateCode = (): string => uuidv4().replace(/-/g, "");
-
 const generateUniqueCodes = (count: number): string[] => {
-  const codes = new Set<string>();
-  while (codes.size < count) {
-    codes.add(generateCode());
-  }
-  return Array.from(codes);
+  const timestamp = Date.now();
+  return Array.from({ length: count }, (_, index) => `${timestamp}${index + 1}`);
 };
 
 const QRGenerator: React.FC = () => {

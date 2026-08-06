@@ -1,5 +1,4 @@
 import React, { useEffect, useMemo, useState } from "react";
-import { v4 as uuidv4 } from "uuid";
 import { QRCodeCanvas } from "qrcode.react";
 import { useNavigate } from "react-router-dom";
 import chiNhanhList from "../../data/ListChiNhanh.json";
@@ -266,7 +265,10 @@ const WarehousePrintPage: React.FC = () => {
 
   const handleGenerate = () => {
     const count = Math.min(Math.max(quantity, 1), 600);
-    setCardIds(Array.from({ length: count }, () => uuidv4()));
+    const timestamp = Date.now();
+    setCardIds(
+      Array.from({ length: count }, (_, index) => `${timestamp}${index + 1}`),
+    );
   };
 
   const sizeLabel = `${resolvedDesign.width}${resolvedDesign.unit === "in" ? "″" : "mm"} × ${resolvedDesign.height}${resolvedDesign.unit === "in" ? "″" : "mm"}`;
